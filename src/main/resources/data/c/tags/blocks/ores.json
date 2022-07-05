@@ -2,39 +2,43 @@
   "replace": false,
   "values": [
     {
-      "id": "#minecraft:redstone_ores",
+      "id": "minecraft:redstone_ore",
       "required": false
     },
     {
-      "id": "#minecraft:copper_ores",
+      "id": "minecraft:copper_ore",
       "required": false
     },
     {
-      "id": "#minecraft:gold_ores",
+      "id": "minecraft:gold_ore",
       "required": false
     },
     {
-      "id": "#minecraft:iron_ores",
+      "id": "minecraft:nether_gold_ore",
       "required": false
     },
     {
-      "id": "#minecraft:coal_ores",
+      "id": "minecraft:iron_ore",
       "required": false
     },
     {
-      "id": "#minecraft:emerald_ores",
+      "id": "minecraft:coal_ore",
       "required": false
     },
     {
-      "id": "#minecraft:lapis_ores",
+      "id": "minecraft:emerald_ore",
       "required": false
     },
     {
-      "id": "#minecraft:diamond_ores",
+      "id": "minecraft:lapis_ore",
       "required": false
     },
     {
-      "id": "#c:quartz_ores",
+      "id": "minecraft:diamond_ore",
+      "required": false
+    },
+    {
+      "id": "minecraft:nether_quartz_ore",
       "required": false
     }
   ]
