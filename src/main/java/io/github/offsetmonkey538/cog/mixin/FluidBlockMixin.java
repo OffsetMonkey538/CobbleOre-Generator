@@ -21,7 +21,8 @@ public class FluidBlockMixin {
 
 	@Redirect(method = "receiveNeighborFluids", at = @At(value = "FIELD", target = "Lnet/minecraft/block/Blocks;COBBLESTONE:Lnet/minecraft/block/Block;", opcode = Opcodes.GETSTATIC))
 	private Block cog$receiveNeighborFluids() {
-		//TODO: 50% chance for cobblestone, 50% chance for any ore
+		if (rng.nextInt(3) > 0)
+			return Blocks.COBBLESTONE;
 		return Blocks.CAKE;
 	}
 }
