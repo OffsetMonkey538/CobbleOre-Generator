@@ -16,11 +16,6 @@
   "icon": "assets/cog/icon.png",
 
   "environment": "*",
-  "entrypoints": {
-    "main": [
-      "io.github.offsetmonkey538.cog.CogMain"
-    ]
-  },
   "mixins": [
     "cog.mixins.json"
   ],
