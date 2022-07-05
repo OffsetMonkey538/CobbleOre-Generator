@@ -1,6 +1,7 @@
 package io.github.offsetmonkey538.cog.mixin;
 
 import net.fabricmc.fabric.api.tag.TagFactory;
+import net.fabricmc.fabric.api.tag.TagRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FluidBlock;
@@ -16,7 +17,7 @@ import java.util.Random;
 @Mixin(FluidBlock.class)
 public class FluidBlockMixin {
 
-	private static final Tag<Block> ORES = TagFactory.BLOCK.create(new Identifier("c", "ores"));
+	private static final Tag<Block> ORES = TagRegistry.block(new Identifier("c", "ores"));
 
 	private static final Random rng = new Random();
 
