@@ -7,6 +7,7 @@ import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.RegistryEntry;
 import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -23,6 +24,6 @@ public class FluidBlockMixin {
 	private Block cog$receiveNeighborFluids() {
 		if (rng.nextInt(3) > 0)
 			return Blocks.COBBLESTONE;
-		return Blocks.CAKE;
+		return Registry.BLOCK.getEntryList(ORES).flatMap(t -> t.getRandom(rng)).orElse(RegistryEntry.of(Blocks.CAKE)).value();
 	}
 }
